@@ -6,11 +6,11 @@ import java.util.Scanner;
 public class ServicioEspectador {
 
     //LISTA DE ESPECTADORES
-    private static ArrayList<Espectador> listaDeEspectadores = new ArrayList();
+    private  ArrayList <Espectador> listaDeEspectadores = new ArrayList();
     Scanner leer = new Scanner(System.in).useDelimiter("\n");
   
     //GET&SET
-    public static ArrayList<Espectador> getListaDeEspectadores() {
+    public ArrayList<Espectador> getListaDeEspectadores() {
         return listaDeEspectadores;
     }
     

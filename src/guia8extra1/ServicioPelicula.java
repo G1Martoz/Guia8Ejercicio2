@@ -6,8 +6,12 @@ import java.util.Scanner;
 public class ServicioPelicula {
 
     //CARTELERA
-    ArrayList cartelera = new ArrayList();
+    ArrayList<Pelicula> cartelera = new ArrayList();
     Scanner leer = new Scanner(System.in).useDelimiter("\n");
+
+    public ArrayList <Pelicula> getCartelera() {
+        return cartelera;
+    }
 
     //METODOS
     public void crearCartelera() {

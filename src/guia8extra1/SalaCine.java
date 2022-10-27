@@ -51,13 +51,22 @@ public class SalaCine {
             return false;
         }
     }
-    
+
+    public void agregarPelicula(Pelicula a) {
+        
+        this.peli = a;
+        
+    }
+
+    public void agregarEspectador(Espectador e) {
+        this.asignarAsiento(e);
+    }
+
 //    public void abrirSala(){
 //        ServicioPelicula newPeli = new ServicioPelicula();
 //        newPeli.crearCartelera();
 //        this.peli = 
 //    }
-    
     public void asignarAsiento(Espectador e) {
         //COMPRUEBA SI CUMPLE LOS REQUISITOS
         if (this.asientoDisponible() && this.costeEntrada(e) && this.saberLegal(e)) {
