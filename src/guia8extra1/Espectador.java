@@ -5,11 +5,11 @@ public class Espectador {
     private String nombre;
     private Integer edad;
     private Integer dinero;
+    private boolean sentado;
     
     //CONSTRUCTORES
     public Espectador() {
     }
-
     public Espectador(String nombre, Integer edad, Integer dinero) {
         this.nombre = nombre;
         this.edad = edad;
@@ -20,28 +20,28 @@ public class Espectador {
     public String getNombre() {
         return nombre;
     }
-
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
     public Integer getEdad() {
         return edad;
     }
-
     public void setEdad(Integer edad) {
         this.edad = edad;
     }
-
     public Integer getDinero() {
         return dinero;
     }
-
     public void setDinero(Integer dinero) {
         this.dinero = dinero;
     }
     
     //METODOS
+    public boolean asiento(){
+        //Para saber si esta sentado o no
+        return sentado;
+    }
+    
 //    @Override
 //    public String toString() {
 //        return "Espectador{" + "nombre=" + nombre + ", edad=" + edad + ", dinero=" + dinero + '}';
